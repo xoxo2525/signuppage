@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./signup.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="logo"><a href="loginxmain.html"><img src="./img/logo.png"></a></div>
+            <div class="signup"><h2 style="text-align: left;">회원가입</h2></div>
+        </div>
+        <div class="hello">
+            <span id="nameValue"></span><strong>님 안녕하세요!</strong>
+        </div>
+
+        <h4>회원정보를 입력해주세요.</h4>
+        <table>
+            <tr>
+                <td class="area1" style="border-top: 2px solid black;">생년월일</td>
+                <td class="area2" style="border-top: 2px solid black;"><span id="birthdayValue"></span>
+            </tr>
+            <tr>
+                <td class="area1">휴디폰번호</td>
+                <td class="area2"><span id="phoneValue"></span></td>
+            </tr>
+            <tr>
+                <td class="area1">아이디</td>
+                <td class="area2">
+                    <input class="inputbox" name="id" id="id" type="text" maxlength="12" oninput="validateUsername()"
+                           autocapotalize="off" autocomplete="off" placeholder="영문,숫자 조합(8~12자)" required="required">
+                    <p id="warning" style="color: red; display: none;">아이디는 8~12글자의 영문과 숫자 조합이어야 합니다.</p>
+                    <button class="idcheck" type="button" onclick="goToDupCheck">중복확인</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="area1">비밀번호</td>
+                <td class="area2">
+                    <input class="inputbox" name="password" id="password" type="password"
+                           autocapitalize="off" autocomplete="off" placeholder="영문,숫자,특수기호 중 2가지 이상 조합" required="required" />
+                </td>
+            </tr>
+            <tr>
+                <td class="area1">비밀번호 확인</td>
+                <td class="area2">
+                    <input class="inputbox" name="cfrpassword" id="cfrpassword" type="password"
+                           autocapitalize="off" autocomplete="off" placeholder="영문,숫자,특수기호 중 2가지 이상 조합" required="required">
+                </td>
+            </tr>
+            <tr>
+                <td class="area1">이메일 주소</td>
+                <td class="area2"><input class="inputbox" type="text" id="e-mail" /></td>
+            </tr>
+            <tr>
+                <td class="area1">무인발권기 기능 설정</td>
+                <td class="area2">
+                    <input type="radio" name="select1" value="use" checked />사용
+                    <input type="radio" name="select1" value="disuse" />사용안함
+                </td>
+            </tr>
+            <tr>
+                <td class="area1">나만의 MEGAV</td>
+                <td class="area2">자주 방문하는 메가브이를 등록해 주세요! &nbsp; <button type="button" class="place">등록</button></td>
+            </tr>
+        </table>
+        <br /><br />
+        <div style="text-align:center;"><button type="button" onclick="goToMainPage()">회원가입</button></div>
+    </div>
+
+
+
+    <script src="./signup.js"></script>
+</body>
+</html>

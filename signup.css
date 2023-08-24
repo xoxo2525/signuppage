@@ -1,0 +1,179 @@
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    display: flex;
+    align-items: center; /* 세로 정렬 */
+}
+
+.logo {
+    flex: 1;
+}
+
+.signup {
+    flex: 1;
+}
+
+header {
+    background-color: #fff;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+    .logo img {
+        width: 250px;
+        height: auto;
+    }
+
+.user {
+    margin-left: auto;
+}
+
+    .user ul {
+        list-style: none;
+        display: flex;
+    }
+
+    .user li {
+        margin-right: 20px;
+    }
+
+    .user img {
+        width: 50px;
+    }
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(144, 10, 5);
+}
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav li {
+        margin-left: 50px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+.search {
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+}
+
+    .search input {
+        padding: 5px;
+    }
+
+    .search button {
+        padding: 5px 10px;
+        background-color: #010000;
+        color: white;
+        cursor: pointer;
+    }
+
+.banner {
+    background-color: black;
+    margin-top: 10px;
+}
+
+    .banner img {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: 400px;
+    }
+
+.movie-chart {
+    padding: 20px;
+}
+
+    .movie-chart h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3개의 영화 열로 표시 (필요에 따라 조정 가능) */
+    gap: 20px;
+}
+
+.movie-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+    .movie-card img {
+        width: 100%;
+        height: auto;
+    }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+    .footer-content p {
+        margin: 5px;
+    }
+
+
+.container {
+    padding: 5% 10% 5% 10%;
+    margin: 0% 20% 0% 20%;
+    background-color: #ffffff
+}
+
+body, html {
+    margin: 0;
+    padding: 0%;
+    height: 400px;
+}
+
+.area1 {
+    width: 200px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid black;
+    padding: 20px;
+}
+
+.area2 {
+    width: 400px;
+    border-bottom: 1px solid black;
+    padding: 20px;
+}
+
+.inputbox {
+    width: 250px;
+}
+
+.hello {
+    font-size: 30px;
+}
